@@ -1,3 +1,4 @@
+import 'package:betpro/register_EnterPhone.dart';
 import "package:flutter/material.dart";
 import 'package:google_fonts/google_fonts.dart';
 
@@ -221,9 +222,14 @@ class _LoginScreenState extends State<LoginScreen> {
                             TextStyle(fontSize: 14, color: Colors.white60)),
                   ),
                   TextButton(
-                    onPressed: () {},
+                    onPressed: () {
+                      Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                              builder: (context) => EnterPhoneNumber()));
+                    },
                     child: Text(
-                      "Login",
+                      "Sign Up",
                       style: GoogleFonts.poppins(
                           textStyle:
                               TextStyle(fontSize: 14, color: Colors.white)),

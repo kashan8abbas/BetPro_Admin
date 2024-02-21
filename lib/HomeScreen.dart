@@ -1,3 +1,4 @@
+import 'package:betpro/first.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
@@ -260,7 +261,13 @@ class _HomeScreenState extends State<HomeScreen> {
                                     MainAxisAlignment.spaceBetween,
                                 children: [
                                   TextButton(
-                                    onPressed: () {},
+                                    onPressed: () {
+                                      Navigator.push(
+                                          context,
+                                          MaterialPageRoute(
+                                              builder: ((context) =>
+                                                  Recive())));
+                                    },
                                     child: Container(
                                         width:
                                             ((queryData.size.width - 25) / 2) -
@@ -313,7 +320,13 @@ class _HomeScreenState extends State<HomeScreen> {
                                         )),
                                   ),
                                   TextButton(
-                                    onPressed: () {},
+                                    onPressed: () {
+                                      Navigator.push(
+                                          context,
+                                          MaterialPageRoute(
+                                              builder: ((context) =>
+                                                  Recive())));
+                                    },
                                     child: Container(
                                         width:
                                             ((queryData.size.width - 25) / 2) -

@@ -1,7 +1,6 @@
 import 'package:betpro/AddDetails.dart';
 import 'package:betpro/HomeScreen.dart';
 import 'package:betpro/first.dart';
-import 'package:betpro/HomeScreen1.dart';
 import 'package:betpro/login.dart';
 import 'package:betpro/options.dart';
 import 'package:betpro/register_EnterPass.dart';
@@ -27,7 +26,7 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: ThirdScreen(),
+      home: SplashScreen(),
     );
   }
 }
