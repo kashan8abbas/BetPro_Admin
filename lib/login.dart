@@ -216,7 +216,7 @@ class _LoginScreenState extends State<LoginScreen> {
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
                   Text(
-                    "Already have a Account?",
+                    "Don't have a Account?",
                     style: GoogleFonts.poppins(
                         textStyle:
                             TextStyle(fontSize: 14, color: Colors.white60)),
@@ -226,10 +226,10 @@ class _LoginScreenState extends State<LoginScreen> {
                       Navigator.push(
                           context,
                           MaterialPageRoute(
-                              builder: (context) => EnterPhoneNumber()));
+                              builder: ((context) => EnterPhoneNumber())));
                     },
                     child: Text(
-                      "Sign Up",
+                      "Sign up",
                       style: GoogleFonts.poppins(
                           textStyle:
                               TextStyle(fontSize: 14, color: Colors.white)),
