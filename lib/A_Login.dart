@@ -1,17 +1,18 @@
-import 'package:betpro/HomeScreen.dart';
+//import 'package:betpro/HomeScreen.dart';
+import 'package:betpro/A_HomeScreen.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
-class AddDetails extends StatefulWidget {
-  const AddDetails({super.key});
+class EnterCredentials extends StatefulWidget {
+  const EnterCredentials({super.key});
 
   @override
-  State<AddDetails> createState() => _AddDetailsState();
+  State<EnterCredentials> createState() => _EnterCredentialsState();
 }
 
-class _AddDetailsState extends State<AddDetails> {
-  TextEditingController _NameController = TextEditingController();
-  TextEditingController _WnumConfirmController = TextEditingController();
+class _EnterCredentialsState extends State<EnterCredentials> {
+  TextEditingController _usernameController = TextEditingController();
+  TextEditingController _passwordController = TextEditingController();
   bool _obscureText1 = true;
   @override
   Widget build(BuildContext context) {
@@ -30,7 +31,7 @@ class _AddDetailsState extends State<AddDetails> {
                 child: Row(
                   children: [
                     Text(
-                      "Add details",
+                      "Enter Credentials",
                       style: GoogleFonts.poppins(
                         textStyle: TextStyle(
                           fontSize: 28,
@@ -62,18 +63,7 @@ class _AddDetailsState extends State<AddDetails> {
                               margin: EdgeInsets.symmetric(
                                   horizontal: 20, vertical: 10),
                               child: Row(
-                                children: [
-                                  Text(
-                                    "Enter Your Name",
-                                    style: GoogleFonts.poppins(
-                                      textStyle: TextStyle(
-                                        fontSize: 18,
-                                        color: Color.fromRGBO(5, 88, 180, 1),
-                                        fontWeight: FontWeight.w600,
-                                      ),
-                                    ),
-                                  ),
-                                ],
+                                children: [],
                               ),
                             ),
                             Container(
@@ -93,10 +83,10 @@ class _AddDetailsState extends State<AddDetails> {
                                 children: [
                                   Expanded(
                                     child: TextField(
-                                      controller: _NameController,
+                                      controller: _usernameController,
                                       decoration: InputDecoration(
                                         border: InputBorder.none,
-                                        hintText: 'Your Name',
+                                        hintText: 'Username',
                                         hintStyle: TextStyle(
                                             fontSize: 13,
                                             fontWeight: FontWeight.w400),
@@ -134,11 +124,11 @@ class _AddDetailsState extends State<AddDetails> {
                                   Expanded(
                                     child: TextField(
                                       obscureText: _obscureText1,
-                                      controller: _WnumConfirmController,
+                                      controller: _passwordController,
                                       keyboardType: TextInputType.phone,
                                       decoration: InputDecoration(
                                         border: InputBorder.none,
-                                        hintText: 'Your Whatsapp No',
+                                        hintText: 'Password',
                                         hintStyle: TextStyle(
                                             fontSize: 13,
                                             fontWeight: FontWeight.w400),
@@ -171,7 +161,7 @@ class _AddDetailsState extends State<AddDetails> {
                                   Row(
                                     children: [
                                       Text(
-                                        "These Details Will Be Used To Contact You",
+                                        "                             ",
                                         style: GoogleFonts.poppins(
                                           textStyle: TextStyle(
                                             fontSize: 13,
@@ -193,7 +183,7 @@ class _AddDetailsState extends State<AddDetails> {
                             Navigator.push(
                                 context,
                                 MaterialPageRoute(
-                                    builder: (context) => HomeScreen()));
+                                    builder: (context) => A_HomeScreen()));
                           },
                           child: Container(
                               height: 50,
